@@ -1,0 +1,13 @@
+package com.example.kumarket;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class KumarketApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
