@@ -46,4 +46,9 @@ public class BookmarkService {
         BookmarkEntity returnEntity=bookmarkRepository.save(bookmarkEntity);
         return returnEntity.toDto();
     }
+    public Boolean deleteBookmark(Long id){
+        bookmarkRepository.findById(id).orElseThrow(()->new NoSuchElementException());
+        bookmarkRepository.deleteById(id);
+        return true;
+    }
 }

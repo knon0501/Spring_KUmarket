@@ -22,4 +22,8 @@ public class BookmarkController {
     public BookmarkDto createBookmark(@RequestBody  CreateBookmarkDto bookmarkDto){
         return bookmarkService.createBookmark(bookmarkDto);
     }
+    @DeleteMapping("/{id}")
+    public Boolean deleteBookmark(@PathVariable Long id){
+        return bookmarkService.deleteBookmark(id);
+    }
 }
